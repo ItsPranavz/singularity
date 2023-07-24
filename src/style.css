@@ -1,0 +1,99 @@
+* {
+  font-family: sans-serif;
+}
+
+.navUnclicked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: floralwhite;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px 1px darkgrey;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  transition: box-shadow 0.5s ease, width 0.4s ease;
+  user-select: none;
+}
+
+.navClicked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: floralwhite;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px 1px darkgrey;
+  width: 70%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  transition: box-shadow 0.5s ease, width 0.4s ease;
+  user-select: none;
+}
+
+.navUnclicked:hover {
+  box-shadow: 2px 2px 10px 1px rgb(100, 100, 100);
+  width: 52%;
+}
+
+#navLogo {
+  margin: 30px 30px 0px 30px;
+  font-size: 30px;
+  transition: font-size 0.4s ease;
+}
+
+#navLogo:hover {
+  font-size: 32px;
+}
+
+#navButton {
+  margin-top: 5px;
+  font-size: 40px;
+  transition: font-size 0.4s ease, transform 0.4s ease;
+  transition-delay: 0.2s;
+}
+
+#navButton:hover {
+  font-size: 60px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.navListUnclicked {
+  display: none;
+}
+
+.navListClicked {
+  list-style-type: none;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: -38px;
+  animation: fade-in 1s ease 1;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.navLink {
+  padding: 15px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 10px 1px darkgrey;
+  transition: box-shadow 0.4s ease;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.navLink:hover {
+  box-shadow: 2px 2px 10px 1px rgb(100, 100, 100);
+}
